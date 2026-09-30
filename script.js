@@ -1,9 +1,12 @@
-async function sayHello() {
-    alert("WHY DID YOU CLICK IT");
+let clicks = 0;
 
-    console.log("Before");
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    console.log("After");
-
-    alert("what is WRONG with YOU");
-}
+function sayHello() {
+    clicks++;
+    if (clicks === 1) {
+        alert("WHY DID YOU CLICK IT");
+    } else if (clicks === 2) {
+        alert("STOP CLICKING");
+    } else {
+        alert("OK FINE, CLICK ALL YOU WANT");
+    }
+}   
