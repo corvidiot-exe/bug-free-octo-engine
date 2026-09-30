@@ -20,7 +20,7 @@ function sayHello() {
 }
 
 function adventure() {
-    clicks++;
+   adventures++;
 
     if (adventures === 1) {
         alert("GRANDMA: let me go back to sleeeeeeep");
@@ -37,7 +37,7 @@ function adventure() {
     } else if (adventures === 7) {
         alert("VOICE: ...that was the last time any of us heard her laugh. That cough, the sirens.... still haunts me.");
     }  else {
-        alert("She's been dead for" + adventures + "years. Move on." );
+        alert("She's been dead for " + adventures + " years. Move on." );
     }
 
 }
